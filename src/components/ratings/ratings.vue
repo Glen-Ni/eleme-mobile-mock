@@ -62,8 +62,8 @@
   import BScroll from 'better-scroll'
   import {formatDate} from '../../common/js/date'
 
-  const ALL = 2;
-  const ERR_OK = 0;
+  const ALL = 2
+  const ERR_OK = 0
   export default {
     name: 'ratings',
     props: {
@@ -85,7 +85,7 @@
     },
     created() {
       this.$http.get('/apis/ratings').then((response) => {
-        response = response.body;
+        response = response.body
         if (response.errno === ERR_OK) {
           this.ratings = response.data;
         }
@@ -100,15 +100,15 @@
     },
     methods: {
       selectRating(type) {
-        this.selectType = type;
+        this.selectType = type
         this.$nextTick(() => {
-          this.scroll.refresh();
+          this.scroll.refresh()
         });
       },
       toggleContent() {
         this.onlyContent = !this.onlyContent;
         this.$nextTick(() => {
-          this.scroll.refresh();
+          this.scroll.refresh()
         });
       },
       needShow(type, text) {
@@ -126,7 +126,7 @@
     },
     filters: {
       formatDate(time) {
-        let date = new Date(time);
+        let date = new Date(time)
         return formatDate(date, 'yyyy-MM-dd hh:mm')
       }
     },

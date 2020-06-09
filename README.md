@@ -1,6 +1,6 @@
 # 饿了么移动端web模仿
 
-##### [演示地址](http://eleme.ntrjbz.club/) http://eleme.ntrjbz.club/
+##### [演示地址](http://eleme.glenni.tk/) http://eleme.glenni.tk/
 
 ## Build Setup
 
